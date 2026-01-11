@@ -4,6 +4,9 @@ import { FiArrowDown, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import './Hero.css';
 
 const Hero = () => {
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    const imagePath = `${baseUrl}${baseUrl.endsWith('/') ? '' : '/'}images/essi.png`;
+
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -77,8 +80,8 @@ const Hero = () => {
                         transition={{ duration: 1, delay: 0.5 }}
                     >
                         <div className="hero-avatar">
-                            <img 
-                                src="/images/essi.png"
+                            <img
+                                src={imagePath}
                                 alt="Essi Akpevwe Praise"
                                 className="hero-avatar-image"
                             />
