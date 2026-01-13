@@ -40,8 +40,8 @@ const Contact = () => {
         {
             icon: <FiMail />,
             title: 'Email',
-            value: 'essiakpevwe@gmail.com',
-            link: 'mailto:essiakpevwe@gmail.com'
+            value: 'essiakpevwepraise@gmail.com',
+            link: 'mailto:essiakpevwepraise@gmail.com'
         },
         {
             icon: <FiPhone />,
